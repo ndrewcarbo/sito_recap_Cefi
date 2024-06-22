@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgba(0,0,0,0.845);
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+} 
+header nav ul li {
+    float: right;
+    min-width: 100px;
+}
+header nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+header nav ul li a:hover{
+    border-bottom: 1px solid #fff;
+}
+nav img {
+    float: left;
+    display: block;
+    width: 80px;
+    margin-bottom: 10px;
+}
+#contenuto {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#contenuto img {
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+.item-1, .item-2, .item-3 {
+    margin-top: 130px;
+}
+[class^="item-"]:hover {
+    background-color: #444;
+    color: #fff;
+}
+p {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+#gallery {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px auto;
+    background-color: #444;
+    
+}
+#gallery img {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+}
+.banner img {
+    margin: 50px auto;
+}
+.banner img:hover {
+    transform: scale(150%);
+}
+
+.banner li {
+    list-style: none;
+    font-size: 1.5em;
+}
+
+
+.clearfix::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+#torna-su {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background: rgba(0,0,0,0.845);
+    border-radius: 50%;
+    background-image: url(../../assets/icon/icons8-freccia-lunga-su-32.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+#whatsup {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0,5s;
+    background-color: green;
+    background-image: url(../../assets/icon/icons8-whatsapp-50.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
